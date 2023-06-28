@@ -24,7 +24,7 @@
 //#define BOARD_CNC3040
 //#define BOARD_PROTONEER_3XX   // For use with Nucleo-F411RE and F446RE boards.
 #define BOARD_GENERIC_UNO     // For use with Nucleo-F411RE and F446RE boards.
-//#define BOARD_CNC_BOOSTERPACK
+// #define BOARD_CNC_BOOSTERPACK
 //#define BOARD_MORPHO_CNC      // For use with Nucleo-F411RE and F446RE boards. Work in progress.
 //#define BOARD_MORPHO_DAC_CNC  // For use with F446RE boards and a 32-bit I2S stereo DAC for X and Y output. **EXPERIMENTAL**
 //#define BOARD_BLACKPILL       // For use with F411 BlackPill, with optional auto square support for one axis
@@ -37,7 +37,7 @@
 //#define BOARD_FYSETC_S6       // F446 based 3D Printer board
 //#define BOARD_FLEXI_HAL       // F446 CNC board
 //#define BOARD_STM32F401_UNI   // F401 CNC board
-//#define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
+// #define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
 
 // WARNING: BOARD_BTT_SKR_20 may fry your Trinamic drivers due to bad hardware design.
 //          The risk goes away if Q1 (HY1904C2) is shorted between source (S) and drain (D).
@@ -58,7 +58,7 @@
 #if IS_NUCLEO_DEVKIT != 64 && !defined(USB_SERIAL_CDC) // The Nucleo boards has an off-chip UART to USB interface.
 #define USB_SERIAL_CDC         1 // Serial communication via native USB.
 #endif
-//#define SAFETY_DOOR_ENABLE   1 // Enable safety door input.
+#define SAFETY_DOOR_ENABLE   1 // Enable safety door input.
 //#define BLUETOOTH_ENABLE     2 // Set to 2 for HC-05 module. Requires and claims one auxillary input pin.
 //#define VFD_ENABLE           1 // Set to 1 or 2 for Huanyang VFD spindle. More here https://github.com/grblHAL/Plugins_spindle
 //#define MODBUS_ENABLE        1 // Set to 1 for auto direction, 2 for direction signal on auxillary output pin.
@@ -67,7 +67,7 @@
 //#define MPG_ENABLE           1 // Enable MPG interface. Requires serial port and one handshake pin unless
                                  // KEYPAD_ENABLE is set to 2 when mode switching is done by the CMD_MPG_MODE_TOGGLE (0x8B)
                                  // command character. Set both MPG_ENABLE and KEYPAD_ENABLE to 2 to use a handshake pin anyway.
-//#define KEYPAD_ENABLE        1 // Set to 1 for I2C keypad, 2 for other input such as serial data. If KEYPAD_ENABLE is set to 2
+#define KEYPAD_ENABLE        1 // Set to 1 for I2C keypad, 2 for other input such as serial data. If KEYPAD_ENABLE is set to 2
                                  // and MPG_ENABLE is uncommented then a serial stream is shared with the MPG.
 //#define DISPLAY_ENABLE       1 // Set to 1 for I2C display protocol, 2 for I2C LED protocol.
 //#define MACROS_ENABLE        1 // Macros plugin. For macros that can be triggered by keypad plugin or auxillary inputs.

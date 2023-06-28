@@ -33,7 +33,7 @@
 #undef I2C_ENABLE
 #undef EEPROM_ENABLE
 #define CNC_BOOSTERPACK 1
-#define I2C_ENABLE      0
+#define I2C_ENABLE      1
 #define EEPROM_ENABLE   0 // Disabled for now for BlackPill - pin differences... // Only change if BoosterPack does not have EEPROM mounted
 #endif
 
